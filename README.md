@@ -1,1 +1,1 @@
-# currency-converter
+# currency-converter - React Native App
