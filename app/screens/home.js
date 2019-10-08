@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { StatusBar } from 'react-native';
 import { Container } from '../components/container';
 import { Logo } from '../components/logo';
-import { InputWithButton } from '../components/textinput'
+import { InputWithButton } from '../components/textinput';
+import { SwapButton } from '../components/buttons';
+
 
 const TEMP_BASE_CURRENCY = 'USD';
 const TEMP_QUOTE_CURRENCY = 'GBP';
@@ -20,6 +22,9 @@ class Home extends Component {
     };
     handlePressQuoteCurrency = () => {
         console.log('press quote currency');
+    };
+    handleSwapCurrency = () => {
+        console.log('handle swap currency');
     };
     render() {
         return (
@@ -39,6 +44,7 @@ class Home extends Component {
                     onPress={this.handlePressQuoteCurrency}
                     value={TEMP_QUOTE_PRICE}
                 />
+                <SwapButton onPress={this.handleSwapCurrency} text="Reverse Currencies" />
             </Container>
         );
 
