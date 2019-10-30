@@ -1,16 +1,14 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import { View } from 'react-native';
-import styles from './styles';
+import PropTypes from "prop-types";
+import React from "react";
+import { View } from "react-native";
+import Styles from "./styles";
 
 const Container = ({ children }) => (
-    <View style={styles.container}>
-        {children}
-    </View>
+  <View style={Styles.container}>{children}</View>
 );
 
 Container.propTypes = {
-    childern: PropTypes.any,
-}
+  childern: PropTypes.any
+};
 
 export default Container;
