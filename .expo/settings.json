@@ -1,6 +1,6 @@
 {
   "urlRandomness": "ws-yj8",
-  "hostType": "lan",
+  "hostType": "tunnel",
   "lanType": "ip",
   "dev": true,
   "minify": false,
